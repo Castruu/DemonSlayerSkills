@@ -1,0 +1,15 @@
+name: DemonSlayerSkills
+version: 1.0
+main: dslayer.draxy.DSMain
+commands:
+  dsreload:
+  moveskill:
+  respmenu:
+  passivas:
+  ativas:
+  modos:
+  dsskills:
+  kekkimenu:
+  activateskill:
+  startskill:
+  changeskill:

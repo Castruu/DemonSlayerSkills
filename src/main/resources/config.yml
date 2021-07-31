@@ -1,0 +1,359 @@
+
+#Configuraçoes ->
+
+#Skills de Espadas ->
+
+SwordSkills:
+  Multiplicador: 1
+  Parabola:
+    Cooldown: 30
+    msg: '&cForma Um (Parábola)'
+    actmsg: '&4Habilidade Ativada'
+  XCross:
+    Cooldown: 30
+    msg: '&6Forma Dois (X)'
+    actmsg: '&4Habilidade Ativada'
+  SemiCirculo:
+    Cooldown: 30
+    msg: '&dForma Três (Semi Circulo)'
+    actmsg: '&4Habilidade Ativada'
+  Helix:
+    Cooldown: 30
+    msg: '&7Forma Quatro (Helix)'
+    actmsg: '&4Habilidade Ativada'
+  RandomCross:
+    Cooldown: 30
+    msg: '&4Forma Cinco (Cortes Multiplos)'
+    actmsg: '&4Habilidade Ativada'
+
+#KekkiJutsus ->
+
+KekkiJutsus:
+  Multiplicador: 2
+  Sphere:
+    Paid: false
+    Cooldown: 30
+  Circle:
+    Paid: false
+    Cooldown: 30
+  Tree:
+    Paid: true
+    Cooldown: 30
+    Item: 32
+    Slot: 3
+    Cost: 4
+    Perm: 'kekkitree.use' #NAO MUDE A PERMISSAO
+    ItemName: '&cKekkiJustsu da Prisão'
+    ItemLore:
+      - '&5Prenda seus oponentes!'
+  Spider:
+    Paid: true
+    Cooldown: 30
+    Item: 30
+    Slot: 1
+    Cost: 4
+    Perm: 'kekkispider.use' #NAO MUDE A PERMISSAO
+    ItemName: '&dKekkiJutsus da Teita'
+    ItemLore:
+      - '&4Corte seus oponentes'
+  Nezuko:
+    Paid: true
+    Cooldown: 30
+    Item: 46
+    Slot: 2
+    Cost: 4
+    Perm: 'kekkinezuko.use' #NAO MUDE A PERMISSAO
+    ItemName: '&4Bakketsu'
+    ItemLore:
+      - '&cExploda seus rivais'
+
+
+#Skills de Movement ->
+
+MoveSkills:
+  DashFoward:
+    Cooldown: 60
+    msg: '&7Dash para frente'
+    actmsg: '&4Habilidade Ativada'
+
+  DashBackward:
+    Cooldown: 60
+    msg: '&9Dash pra tras'
+    actmsg: '&4Habilidade Ativada'
+
+  Levitation:
+    Cooldown: 60
+    msg: '&dPeido Voador'
+    actmsg: '&4Habilidade Ativada'
+
+#Passivas ->
+
+Passivas:
+  Skill1:
+    ItemName: 'Skill1'
+    ItemLore:
+    - 'Nivel da Skill: [level]' #O nível da skill está após essa linha
+    - 'Linha Aqui'
+    - 'Linha Aqui'
+    - 'Linha Aqui'
+    - 'Linha Aqui'
+    Cooldown: 60
+    msg: '&4Regen de Vida'
+    actiontime: '([level] * 1.2) * 60'
+    repeater: 9
+    magnitude: '[level] * 10 + 5'
+    actmsg: '&4Habilidade Ativada'
+    offmsg: '&4Habilidade Desativada'
+
+  Skill2:
+    ItemName: 'Skill2'
+    ItemLore:
+      - 'Nivel da Skill: [level]' #O nível da skill está após essa linha
+      - '&cLinha aqui'
+      - '&cLinha aqui'
+      - '&cLinha aqui'
+    Cooldown: 60
+    msg: '&4Regen de Con e Buff de Speed'
+    actiontime: '([level] * 1.2) * 60'
+    repeater: 9
+    speedboost: '[level]'
+    magnitude: '[level] * 10 + 5'
+    actmsg: '&4Habilidade Ativada'
+    offmsg: '&4Habilidade Desativada'
+
+  Skill3:
+    ItemName: 'Skill3'
+    ItemLore:
+      - 'Nivel da Skill: [level]' #O nível da skill está após essa linha
+      - '&2Linha aqui'
+      - '&1Linha aqui'
+    Cooldown: 60
+    msg: '&4Aumentar dano das skills'
+    actiontime: '([level] * 1.2) * 60'
+    magnitude: '1 + ([level]/10)'
+    actmsg: '&4Habilidade Ativada'
+    offmsg: '&4Habilidade Desativada'
+
+
+
+#Pems para partículas ->
+Permissions:
+  Chama: chama.use
+  Inseto: inseto.use
+  Agua: agua.use
+  Pedra: pedra.use
+  Serpente: serpente.use
+  Trovao: trovao.use
+  Nevoa: nevoa.use
+  Vento: vento.use
+  Besta: besta.use
+  Amor: amor.use
+  Som: som.use
+
+#Cooldown Unico para Ults ->
+
+CooldownUlts: 60
+
+
+#Permissoes e Stats para modos ->
+
+Modos:
+  Agua:
+    Stats: 30
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'ragua.ativa'
+    Slot: 1
+    Item: 4430 #ID do ITEM
+    Comando: 'ragua'
+    ItemName: '&bRespiração da Água'
+    ItemLore:
+      - '&1Seja apenas um com a água'
+      - '&9Domine os mares!'
+    AWs:
+      -
+  Trovao:
+    Stats: 30
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rtrovao.ativa'
+    Slot: 2
+    Item: 4141 #ID do ITEM
+    Comando: 'rtrovao'
+    ItemName: '&eRespiração do Trovão'
+    ItemLore:
+      - '&6Domine os raios!'
+      - '&cO trovão está aos seus pés!'
+    AWs:
+      -
+  Besta:
+    Stats: 30
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rbesta.ativa'
+    Slot: 3
+    Item: 4427 #ID do ITEM
+    Comando: 'rbesta'
+    ItemName: '&9Respiração da Besta'
+    ItemLore:
+      - '&bUm animal selvagem representa as bestas!'
+    AWs:
+      -
+  Lua:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rlua.ativa'
+    Slot: 4
+    Item: 4144 #ID do ITEM
+    Comando: 'rlua'
+    ItemName: '&5Respiração da Lua'
+    ItemLore:
+      - '&dA escuridão toma conta!'
+    AWs:
+      -
+  Som:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rsom.ativa'
+    Slot: 5
+    Item: 4110  #ID do ITEM
+    Comando: 'rsom'
+    ItemName: '&7Respiração do Som'
+    ItemLore:
+      - '&8Solta o som DJ!'
+    AWs:
+      -
+  Chama:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rchama.ativa'
+    Slot: 6
+    Item: 4143 #ID do ITEM
+    Comando: 'rchama'
+    ItemName: '&cRespiração da Chama'
+    ItemLore:
+      - '&4A labareda inapagável te consome!'
+    AWs:
+      -
+  Divina:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rdivina.ativa'
+    Slot: 7
+    Item: 4421 #ID do ITEM
+    Comando: 'rdivina'
+    ItemName: '&6Respiração Divina'
+    ItemLore:
+      - '&4Domine o fogo!'
+    AWs:
+      -
+  Amor:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'ramor.ativa'
+    Slot: 8
+    Item: 4507 #ID do ITEM
+    Comando: 'ramor'
+    ItemName: '&dRespiração Amor'
+    ItemLore:
+      - 'Linha aqui'
+    AWs:
+      -
+  Serpente:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rserpente.ativa'
+    Slot: 9
+    Item: 4161 #ID do ITEM
+    Comando: 'rserpente'
+    ItemName: '&9Respiração da Serpente'
+    ItemLore:
+      - '&1Tssss, seja uma cobra!'
+    AWs:
+      -
+  Pedra:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rpedra.ativa'
+    Slot: 10
+    Item: 4414 #ID do ITEM
+    Comando: 'rpedra'
+    ItemName: '&8Respiração da Pedra'
+    ItemLore:
+      - '&7A terra é sua aliada!'
+    AWs:
+      -
+  Nevoa:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rnevoa.ativa'
+    Slot: 11
+    Item: 4420 #ID do ITEM
+    Comando: 'rnevoa'
+    ItemName: '&1Respiração da Névoa'
+    ItemLore:
+      - '&3Seja um com a neblina!'
+    AWs:
+      -
+  Vento:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rvento.ativa'
+    Slot: 12
+    Item: 4422 #ID do ITEM
+    Comando: 'rvento'
+    ItemName: '&aRespiração do Vento'
+    ItemLore:
+      - '&2Domine os ares!'
+    AWs:
+      -
+  Inseto:
+    Stats: 50
+    Breath: true
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'rinseto.ativa'
+    Slot: 13
+    Item: 4432 #ID do ITEM
+    Comando: 'rinseto'
+    ItemName: '&dRespiração do Inseto'
+    ItemLore:
+      - '&dRespiração do Inseto'
+    AWs:
+      -
+  OniNezuko:
+    Stats: 50
+    Breath: false
+    TempoAtivo: 600
+    Cooldown: 100
+    Perm: 'oninezuko'
+    Slot: 14
+    Item: 176 #ID do ITEM
+    Comando: 'oninezuko'
+    ItemName: '&dModo Oni Nezuko'
+    ItemLore:
+      - '&cModo Oni Nezuko'
+      - '&bReceba uma força sobrehumana!'
+    AWs:
+      -
