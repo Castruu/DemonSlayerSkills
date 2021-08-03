@@ -3,7 +3,7 @@
 <p align="center">A plugin based on the skills from the anime Demon Slayer.</p>
 
 
-##Some demonstration videos of the effects:
+<p align="left">A plugin based on the skills from the anime Demon Slayer.</p>
 
 Butterfly effect:
  
